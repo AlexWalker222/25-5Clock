@@ -6,4 +6,4 @@
 
 ### App created with react CSS FontAwesome Icons and a whole lot of originallity for more information
 
-## ![25+5Clock][jpeg]
+## ![clock](public/25+5Clock.jpeg)
