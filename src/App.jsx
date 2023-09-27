@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import "./App.css";
 
 const audio = document.getElementById("beep");
 
