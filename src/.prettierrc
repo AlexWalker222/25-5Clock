@@ -1,3 +1,17 @@
 {
-  "editorconfig": "true"
+"arrowParenthesis": "avoid",
+"bracketSameLine": true,
+"bracketSpacing": true,
+"cursorOffset": -1,
+"editorconfig": true,
+"semi": true,
+"embeddedLanguageFormatting": "auto",
+"endOfLine": "crlf",
+"filepath": "auto",
+"htmlWhitespaceSensitivity": "css",
+"jsxSingleQuote": false,
+"parser.css": ".css",
+"parser.jsx": ".babel",
+"parser.scss": ".scss",
+"parser.json": ".json",
 }
