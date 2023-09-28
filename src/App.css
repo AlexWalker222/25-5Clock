@@ -1,20 +1,8 @@
-
 html {
   background-color: black;
   display: contents;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  background-color: aqua;
-  align-items: center;
-  justify-content: center;
-  font-size: 36px;
-  border-radius: 30em 30em 30em 30em;
-  border: 50px groove red;
-  min-width: 80vw;
-}
 
 #author {
   display: inline-block;
@@ -62,11 +50,21 @@ body {
   background-color: black;
 }
 
-
-div>.flex.action-wrapper {
+body {
   display: flex;
-} 
+  flex-direction: column;
+  background-color: aqua;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  border-radius: 30em 30em 30em 30em;
+  border: 50px groove red;
+  min-width: 80vw;
+}
 
+div {
+  display: contents;
+}
 
 button {
   position: sticky;
@@ -114,6 +112,7 @@ h2#session-label:hover {
 
 
 span#break-length {
+  height: max-content;
   border: greenyellow ridge 10px;
   background-color: black;
 }
@@ -127,12 +126,14 @@ span#session-length {
 
 span#time-left {
   color: gold;
+  height: max-content;
   border-radius: 30em 30em 30em 30em;
   border: black 0.5em ridge;
   background-color: rgb(201, 18, 18);
 }
 
 span#break-length {
+  height: max-content;
   font-size: 36px;
   background-color: black;
   border: greenyellow ridge 10px;

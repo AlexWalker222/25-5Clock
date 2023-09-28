@@ -2,6 +2,8 @@
 
 import React from "react";
 import './App.css';
+
+
 const audio = document.getElementById("beep");
 
 class App extends React.Component {
@@ -75,8 +77,8 @@ class App extends React.Component {
     let minutes = Math.floor(count / 60);
     let seconds = count % 60;
 
-    minutes = minutes < 10 ? "0" + minutes : minutes;
-    seconds = seconds < 10 ? "0" + seconds : seconds;
+    minutes = minutes < 10 ? `0${minutes}` : minutes;
+    seconds = seconds < 10 ? `0${seconds}` : seconds;
 
     return `${minutes}:${seconds}`;
   };
@@ -84,13 +86,7 @@ class App extends React.Component {
   handleLengthChange = (count, timerType) => {
     const { sessionCount, breakCount, isPlaying, currentTimer } = this.state;
 
-    let newCount;
-
-    if (timerType === "session") {
-      newCount = sessionCount + count;
-    } else {
-      newCount = breakCount + count;
-    }
+    const newCount = timerType === "session" ? sessionCount + count : breakCount + count;
 
     if (newCount > 0 && newCount < 61 && !isPlaying) {
       this.setState({
