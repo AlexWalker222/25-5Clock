@@ -62,9 +62,20 @@ body {
   min-width: 80vw;
 }
 
+
+
+div.flex.actions-wrapper {
+  background-color: grey;
+  color: aliceblue;
+
+}
+
+
 div {
   display: contents;
 }
+
+
 
 button {
   position: sticky;
