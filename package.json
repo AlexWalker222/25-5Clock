@@ -1,7 +1,7 @@
 {
   "name": "clock",
   "private": false,
-  "homepage": "github.com/io/",
+  "homepage": "https://alexwalker222.github.io/25-5Clock/",
   "version": "0.0.3",
   "type": "module",
   "scripts": {
