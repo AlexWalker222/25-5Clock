@@ -119,6 +119,7 @@ class App extends React.Component {
     };
 
     return (
+      <>
       <div>
         <div className="flex">
           <SetTimer {...breakProps} />
@@ -137,6 +138,7 @@ class App extends React.Component {
           </div>
         </div>
       </div>
+      </>
     );
   }
 }
@@ -145,26 +147,28 @@ const SetTimer = (props) => {
   const id = props.title.toLowerCase();
 
   return (
-    <div className="timer-container">
-      <h2 id={`${id}-label`}>{props.title} Length</h2>
-      <div className="flex actions-wrapper">
-        <button id={`${id}-decrement`} onClick={props.handleDecrease}>
-          <i className="fa-minus fa-beat fa-solid fa-xl" />
-        </button>
-        <span id={`${id}-length`}>{props.count}</span>
-        <button id={`${id}-increment`} onClick={props.handleIncrease}>
-          <i className="fa-plus fa-beat fa-solid fa-xl" />
-        </button>
-        <div id="author" className="about-me">
-          <i id="author-icon" className="fa-fas fa-solid fa-id-card">
-            <p id="author-text" className="about-me-text">
-              By: Alex Walker
-            </p>
-          </i>
-        </div>
+    <>
+     <div className="timer-container">
+       <h2 id={`${id}-label`}>{props.title} Length</h2>
+        <div className="flex actions-wrapper">
+         <button id={`${id}-decrement`} onClick={props.handleDecrease}>
+           <i className="fa-minus fa-beat fa-solid fa-xl" />
+         </button>
+         <span id={`${id}-length`}>{props.count}</span>
+         <button id={`${id}-increment`} onClick={props.handleIncrease}>
+           <i className="fa-plus fa-beat fa-solid fa-xl" />
+         </button>
+         <div id="author" className="about-me">
+           <i id="author-icon" className="fa-fas fa-solid fa-id-card">
+             <p id="author-text" className="about-me-text">
+               By: Alex Walker
+             </p>
+           </i>
+         </div>
+       </div>
       </div>
-    </div>
-  );
+     </>
+   );
 };
 
 export default App;
