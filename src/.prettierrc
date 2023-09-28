@@ -1,6 +1,5 @@
 {
 "arrowParenthesis": "avoid",
-"bracketSameLine": true,
 "bracketSpacing": true,
 "cursorOffset": -1,
 "editorconfig": true,
@@ -10,8 +9,14 @@
 "filepath": "auto",
 "htmlWhitespaceSensitivity": "css",
 "jsxSingleQuote": false,
-"parser.css": ".css",
-"parser.jsx": ".babel",
-"parser.scss": ".scss",
-"parser.json": ".json",
+"parser.jsx": "babel",
+"parser.tsx": "typescript",
+"parser.json5": "json5",
+"parser.ts": "babel-ts",
+"parser.less": "less",
+"parser.scss": "scss",
+"parser.json": "json",
+"parser.html": "html",
+"parser.css": "css"
+"${`fileType`}"": "true"
 }
