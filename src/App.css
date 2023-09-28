@@ -63,7 +63,9 @@ body {
 }
 
 
-
+div>.flex.action-wrapper {
+  display: flex;
+} 
 
 
 button {
@@ -112,7 +114,6 @@ h2#session-label:hover {
 
 
 span#break-length {
-  height: max-content;
   border: greenyellow ridge 10px;
   background-color: black;
 }
@@ -126,14 +127,12 @@ span#session-length {
 
 span#time-left {
   color: gold;
-  height: max-content;
   border-radius: 30em 30em 30em 30em;
   border: black 0.5em ridge;
   background-color: rgb(201, 18, 18);
 }
 
 span#break-length {
-  height: max-content;
   font-size: 36px;
   background-color: black;
   border: greenyellow ridge 10px;
