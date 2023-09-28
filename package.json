@@ -1,8 +1,8 @@
 {
   "name": "clock",
-  "private": false,
+  "private": true,
   "homepage": "https://alexwalker222.github.io/25-5Clock/",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
