@@ -87,7 +87,7 @@ button {
   border-radius: 60em 60em 60em 60em;
 }
 
-button :hover {
+button:hover {
   cursor: pointer;
   background-color: lawngreen;
   align-items: center;
