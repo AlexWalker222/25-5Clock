@@ -1,10 +1,6 @@
 import { Component } from "react";
 
-import '/public/static/App.css';
-
-
-
-
+import '../../static/App.css';
 
 const audio = document.getElementById("beep");
 
