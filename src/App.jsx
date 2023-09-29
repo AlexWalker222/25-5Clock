@@ -1,6 +1,5 @@
-/* eslint-disable react/prop-types */
-
 import { Component } from "react";
+
 import '/public/static/App.css';
 
 
