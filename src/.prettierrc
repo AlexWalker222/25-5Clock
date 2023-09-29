@@ -1,22 +1,20 @@
 {
-"arrowParenthesis": "avoid",
+"arrowParens": "avoid",
 "bracketSpacing": true,
 "cursorOffset": -1,
 "editorconfig": true,
 "semi": true,
-"embeddedLanguageFormatting": "auto",
+"embeddedLanguageFormatting": "off",
 "endOfLine": "crlf",
-"filepath": "auto",
-"htmlWhitespaceSensitivity": "css",
-"jsxSingleQuote": false,
-"parser.jsx": "babel",
-"parser.tsx": "typescript",
-"parser.json5": "json5",
-"parser.ts": "babel-ts",
-"parser.less": "less",
-"parser.scss": "scss",
-"parser.json": "json",
-"parser.html": "html",
-"parser.css": "css"
-"${`fileType`}"": "true"
+"rangeStart": 0,
+"formattedRange": {
+    ".html": "html",
+    "html5": "html5",
+    "JSON": "JSON5",
+    ".json": "json", 
+    ".css": "css",
+    ".js": "js",
+    ".jsx": "jsx",
+    ".scss": "scss"
+ }
 }
