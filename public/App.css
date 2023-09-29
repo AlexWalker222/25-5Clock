@@ -54,27 +54,20 @@ body {
   padding: 40px;
   margin: 20px 20px 20px 20px;
   color: rgba(162, 9, 239, 255);
-  -webkit-border-radius: 40rem 40rem 40rem 40rem;
-  -moz-border-radius: 40rem 40rem 40rem 40rem;
-  -ms-border-radius: 40rem 40rem 40rem 40rem;
-  -o-border-radius: 40rem 40rem 40rem 40rem;
   border-radius: 40rem 40rem 40rem 40rem;
 }
 
 #author-icon:hover {
   background-color: black;
 }
-.actions-wrapper {
+#actions-wrapper {
   background-color: grey;
   color: aliceblue;
 }
 
-
 div {
   display: contents;
 }
-
-
 
 button {
   position: sticky;
@@ -94,7 +87,11 @@ button:hover {
   color: blueviolet;
 }
 
-h2#break-label:hover {
+h2 #break-label {
+  border: 10px groove black;
+  background-color: yellow;
+}
+h2 #break-label:hover {
   cursor: none;
   border-color: gold;
   font-style: italic;
@@ -102,17 +99,12 @@ h2#break-label:hover {
   background-color: black;
 }
 
-h2#break-label {
+h2 #session-label {
   border: 10px groove black;
   background-color: yellow;
 }
 
-h2#session-label {
-  border: 10px groove black;
-  background-color: yellow;
-}
-
-h2#session-label:hover {
+h2 #session-label:hover {
   cursor: none;
   border-color: yellow;
   background-color: black;
@@ -121,20 +113,15 @@ h2#session-label:hover {
 }
 
 
-span#break-length {
-  height: max-content;
-  border: greenyellow ridge 10px;
-  background-color: black;
-}
 
-span#session-length {
+span #session-length {
   font-size: 36px;
   background-color: black;
   z-index: 1;
   border: greenyellow ridge 10px;
 }
 
-span#time-left {
+span #time-left {
   color: gold;
   height: max-content;
   border-radius: 30em 30em 30em 30em;
@@ -142,20 +129,19 @@ span#time-left {
   background-color: rgb(201, 18, 18);
 }
 
-span#break-length {
+#break-length {
   height: max-content;
   font-size: 36px;
   background-color: black;
   border: greenyellow ridge 10px;
 }
-
-h1#timer-label {
+#timer-label {
   border: 10px groove black;
   background-color: yellow;
   display: block;
 }
 
-h1#timer-label:hover {
+#timer-label:hover {
   cursor: none;
   border-color: yellow;
   font-style: italic;
