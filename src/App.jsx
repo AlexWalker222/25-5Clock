@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 
-import React from "react";
+import { Component } from "react";
 import '/public/static/App.css';
 
 
@@ -9,7 +9,7 @@ import '/public/static/App.css';
 
 const audio = document.getElementById("beep");
 
-class App extends React.Component {
+class App extends Component {
   state = {
     breakCount: 5,
     sessionCount: 25,
