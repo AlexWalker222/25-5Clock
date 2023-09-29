@@ -1,6 +1,6 @@
 import { Component } from "react";
 
-import '../../static/App.css';
+import "src/static/App.css"
 
 const audio = document.getElementById("beep");
 
@@ -117,7 +117,6 @@ class App extends Component {
     };
 
     return (
-      <>
       <div>
         <div className="flex">
           <SetTimer {...breakProps} />
@@ -136,7 +135,6 @@ class App extends Component {
           </div>
         </div>
       </div>
-      </>
     );
   }
 }
@@ -145,10 +143,9 @@ const SetTimer = (props) => {
   const id = props.title.toLowerCase();
 
   return (
-    <>
      <div className="timer-container">
        <h2 id={`${id}-label`}>{props.title} Length</h2>
-        <div className="flex actions-wrapper">
+        <div className="flex actions-wrapper" id="action-wrapper">
          <button id={`${id}-decrement`} onClick={props.handleDecrease}>
            <i className="fa-minus fa-beat fa-solid fa-xl" />
          </button>
@@ -158,14 +155,15 @@ const SetTimer = (props) => {
          </button>
          <div id="author" className="about-me">
            <i id="author-icon" className="fa-fas fa-solid fa-id-card">
-             <p id="author-text" className="about-me-text">
+             <p 
+             id="author-text" 
+             className="about-me-text">
                By: Alex Walker
              </p>
            </i>
          </div>
        </div>
-      </div>
-     </>
+      </div>    
    );
 };
 
