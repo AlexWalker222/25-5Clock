@@ -42,19 +42,23 @@ body {
 
 #author-text:hover {
   color: blueviolet;
-  border-bottom: 10px orange ridge;
-  border-top: green ridge 10px;
-  border-left: 10px blue ridge;
-  border-right: 10px ridge red;
   background-color: gold;
+  border-bottom: 10px orange ridge;
+  border-top: 10px green ridge;
+  border-left: 10px blue ridge;
+  border-right: 10px  red ridge;
 }
 
 #author-icon {
   background-color: gold;
   padding: 40px;
   margin: 20px 20px 20px 20px;
-  border-radius: 40rem 40rem 40rem 40rem;
   color: rgba(162, 9, 239, 255);
+  -webkit-border-radius: 40rem 40rem 40rem 40rem;
+  -moz-border-radius: 40rem 40rem 40rem 40rem;
+  -ms-border-radius: 40rem 40rem 40rem 40rem;
+  -o-border-radius: 40rem 40rem 40rem 40rem;
+  border-radius: 40rem 40rem 40rem 40rem;
 }
 
 #author-icon:hover {
@@ -68,7 +72,6 @@ body {
 div .flex.actions-wrapper {
   background-color: grey;
   color: aliceblue;
-
 }
 
 
