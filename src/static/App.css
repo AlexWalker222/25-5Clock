@@ -99,7 +99,7 @@ button :hover {
   color: blueviolet;
 }
 
-h2  #break-label:hover {
+h2#break-label:hover {
   cursor: none;
   border-color: gold;
   font-style: italic;
@@ -107,17 +107,17 @@ h2  #break-label:hover {
   background-color: black;
 }
 
-h2  #break-label {
+h2#break-label {
   border: 10px groove black;
   background-color: yellow;
 }
 
-h2  #session-label {
+h2#session-label {
   border: 10px groove black;
   background-color: yellow;
 }
 
-h2 #session-label:hover {
+h2#session-label:hover {
   cursor: none;
   border-color: yellow;
   background-color: black;
