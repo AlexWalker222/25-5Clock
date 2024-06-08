@@ -1,9 +1,10 @@
-/* eslint-disable react/prop-types */
-import React from "react";
-import './App.css';
+import { Component } from "react";
+
+import "./App.css"
+
 const audio = document.getElementById("beep");
 
-class App extends React.Component {
+class App extends Component {
   state = {
     breakCount: 5,
     sessionCount: 25,
@@ -74,8 +75,8 @@ class App extends React.Component {
     let minutes = Math.floor(count / 60);
     let seconds = count % 60;
 
-    minutes = minutes < 10 ? "0" + minutes : minutes;
-    seconds = seconds < 10 ? "0" + seconds : seconds;
+    minutes = minutes < 10 ? `0${minutes}` : minutes;
+    seconds = seconds < 10 ? `0${seconds}` : seconds;
 
     return `${minutes}:${seconds}`;
   };
@@ -83,13 +84,7 @@ class App extends React.Component {
   handleLengthChange = (count, timerType) => {
     const { sessionCount, breakCount, isPlaying, currentTimer } = this.state;
 
-    let newCount;
-
-    if (timerType === "session") {
-      newCount = sessionCount + count;
-    } else {
-      newCount = breakCount + count;
-    }
+    const newCount = timerType === "session" ? sessionCount + count : breakCount + count;
 
     if (newCount > 0 && newCount < 61 && !isPlaying) {
       this.setState({
@@ -148,26 +143,28 @@ const SetTimer = (props) => {
   const id = props.title.toLowerCase();
 
   return (
-    <div className="timer-container">
-      <h2 id={`${id}-label`}>{props.title} Length</h2>
-      <div className="flex actions-wrapper">
-        <button id={`${id}-decrement`} onClick={props.handleDecrease}>
-          <i className="fa-minus fa-beat fa-solid fa-xl" />
-        </button>
-        <span id={`${id}-length`}>{props.count}</span>
-        <button id={`${id}-increment`} onClick={props.handleIncrease}>
-          <i className="fa-plus fa-beat fa-solid fa-xl" />
-        </button>
-        <div id="author" className="about-me">
-          <i id="author-icon" className="fa-fas fa-solid fa-id-card">
-            <p id="author-text" className="about-me-text">
-              By: Alex Walker
-            </p>
-          </i>
-        </div>
-      </div>
-    </div>
-  );
+     <div className="timer-container">
+       <h2 id={`${id}-label`}>{props.title} Length</h2>
+        <div className="flex actions-wrapper" id="action-wrapper">
+         <button id={`${id}-decrement`} onClick={props.handleDecrease}>
+           <i className="fa-minus fa-beat fa-solid fa-xl" />
+         </button>
+         <span id={`${id}-length`}>{props.count}</span>
+         <button id={`${id}-increment`} onClick={props.handleIncrease}>
+           <i className="fa-plus fa-beat fa-solid fa-xl" />
+         </button>
+         <div id="author" className="about-me">
+           <i id="author-icon" className="fa-fas fa-solid fa-id-card">
+             <p 
+             id="author-text" 
+             className="about-me-text">
+               By: Alex Walker
+             </p>
+           </i>
+         </div>
+       </div>
+      </div>    
+   );
 };
 
 export default App;

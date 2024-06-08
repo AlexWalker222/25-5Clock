@@ -1,0 +1,20 @@
+{
+"arrowParens": "avoid",
+"bracketSpacing": true,
+"cursorOffset": -1,
+"editorconfig": true,
+"semi": true,
+"embeddedLanguageFormatting": "off",
+"endOfLine": "crlf",
+"rangeStart": 0,
+"formattedRange": {
+    ".html": "html",
+    "html5": "html5",
+    "JSON": "JSON5",
+    ".json": "json", 
+    ".css": "css",
+    ".js": "js",
+    ".jsx": "jsx",
+    ".scss": "scss"
+ }
+}
